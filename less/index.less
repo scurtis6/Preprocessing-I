@@ -89,7 +89,7 @@ header {
 	color: black;
 	text-decoration: none;
 	margin: 3% 5% 0% 0%;
-		
+	
 		@media (max-width: 500px){
 			border: 1px solid black;
 			margin-left: -150px;
@@ -104,15 +104,15 @@ header {
 			color: darkmagenta;
 	}//this closes the query
 }//this closes the a:hover
-
+}
 .header-content{
 	margin: 3% auto;
 	width: 900px;
-	}//this closes the .header-content
+}//this closes the .header-content
 	.image{
 	overflow: hidden;
 	.show();
-	margin-left: 3%;
+	margin-left: -4%;
 	@media (max-width: 500px){
 		margin-left: 17%;	
 	}//this closes the query
@@ -136,15 +136,17 @@ header {
 	p{
 	@media (max-width: 500px){
 		font-size: 1.5rem;
-		margin-left: 
+		margin-right: 10%
 	}//this closes the query			
 }//this closes the p
-}
+
 	button{
 		margin-left: 3%;
 		padding: 2%;
 		@media (max-width: 500px){
-			margin-left: 3rem;
+			margin-left: 9%;
+			background-color: black;
+			color: white;
 		}//this closes the query
 }//this closes the button
 
@@ -155,6 +157,8 @@ header {
 	padding: 2% 0% 2% -0%;
 	background: black;
 	@media (max-width: 500px){
+		margin-right: 20%;
+		padding-bottom: 7%;
 	}//this closes the query
 }//this closes the .middle-content
 	h2{
@@ -163,18 +167,30 @@ header {
 		font-size: 1.5rem;
 		margin-bottom: 3%;
 	}//this closes the h2
-	a{
+	img{
 		margin-left: 7%;
 		justify-content: center;
-	}
+		@media (max-width: 500px){
+			margin-left: 15%;
+		}//this closes the query
+	}//this close the img
 .bottom-content{
 	h2{
 		margin-top: 3%;
 		.text();
-	}
+		@media (max-width: 500px){
+			margin-left: 15%;
+			font-size: 2rem;
+		}//this closes the query
+	}//this close the h2
 	ul{
 		margin-left: 25%;
-	}
+		@media (max-width: 500px){
+			font-size: 1.6rem;
+			margin-left: 15%;
+			margin-right: 10%;
+		}//this closes the query 
+	}//this close the ul
 	li {
 		padding-bottom: 1rem; 
 		
@@ -199,4 +215,7 @@ footer{
 	margin-left: 22%;
 	text-align: center;
 	font-size: 0.8rem;
+	@media (max-width: 500px){
+		margin-left: 0%;
+	}
 }
