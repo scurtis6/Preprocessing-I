@@ -96,11 +96,11 @@ header {
 
 .middle-content{
 	margin-left: 22%;
-	width: 900px;
+	max-width: 900px;
 	border: 1px solid black;
-	padding: 2% 0%;
+	padding: 2% 0% 2% -0%;
 	background: black;
-}
+	}
 	h2{
 		color: white;
 		text-align: center;
@@ -108,6 +108,28 @@ header {
 		margin-bottom: 3%;
 	}
 	a{
-		margin-left: 5%;
+		margin-left: 8%;
+	a img{
+		display: flex;
+
+	}		
+}
+.bottom-content{
+	h2{
+		margin-top: 3%;
+		margin-left: 22%;
+		color: black;
+		text-align: left;
+	}
+	ul{
+		margin-left: 25%;
+	}
+	li {
+		padding-bottom: 1rem; 
 		
 	}
+	li::before{
+		content: "\002022";
+		color: rgb(104, 104, 104);
+	}
+}
