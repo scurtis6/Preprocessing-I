@@ -57,11 +57,19 @@ html, body {
 	height: 100%;
 	background: lightgray;
 }
+.text(){
+	margin-left: 22%;
+		color: black;
+		text-align: left
+}
+.show(){
+	width: 100%;
+	display: flex;
+}
 header {
 	nav{
 	margin: auto;
-	width: 100%;
-	display: flex;
+	.show()
 	justify-content: center;
 	}
 	nav a{
@@ -77,8 +85,7 @@ header {
 	}
 	.image{
 	overflow: hidden;
-	width: 100%;
-	display: flex;
+	.show();
 	margin-left: 3%;	
 	}
 	.header-text{
@@ -108,18 +115,13 @@ header {
 		margin-bottom: 3%;
 	}
 	a{
-		margin-left: 8%;
-	a img{
-		display: flex;
-
-	}		
+		margin-left: 7%;
+		justify-content: center;
 }
 .bottom-content{
 	h2{
 		margin-top: 3%;
-		margin-left: 22%;
-		color: black;
-		text-align: left;
+		.text();
 	}
 	ul{
 		margin-left: 25%;
@@ -132,4 +134,20 @@ header {
 		content: "\002022";
 		color: rgb(104, 104, 104);
 	}
+}
+.contact{
+	h2{
+		margin-top: 2%;
+		.text();
+	}
+	p{
+		margin-top: 2%;
+		margin-left: 22%;
+	}
+}
+footer{
+	margin-top: 4%;
+	margin-left: 22%;
+	text-align: center;
+	font-size: 0.8rem;
 }

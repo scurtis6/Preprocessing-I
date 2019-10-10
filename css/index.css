@@ -182,10 +182,8 @@ h2 {
   margin-bottom: 3%;
 }
 a {
-  margin-left: 8%;
-}
-a a img {
-  display: flex;
+  margin-left: 7%;
+  justify-content: center;
 }
 .bottom-content h2 {
   margin-top: 3%;
@@ -202,4 +200,20 @@ a a img {
 .bottom-content li::before {
   content: "\002022";
   color: #686868;
+}
+.contact h2 {
+  margin-top: 2%;
+  margin-left: 22%;
+  color: black;
+  text-align: left;
+}
+.contact p {
+  margin-top: 2%;
+  margin-left: 22%;
+}
+footer {
+  margin-top: 4%;
+  margin-left: 22%;
+  text-align: center;
+  font-size: 0.8rem;
 }
