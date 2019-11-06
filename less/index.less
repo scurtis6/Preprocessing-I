@@ -58,6 +58,7 @@ table {
 	font-family: @hfont;
   }
   html, body {
+	margin: 0 auto;
 	max-width: 100%;
     height: 100%;
 }
@@ -140,7 +141,6 @@ header {
 	.image{
 		overflow: hidden;
 		.show();
-		margin-left: -4%;
 		@media (max-width: 500px){
 			margin-left: 0;
 			background-color: black;
@@ -148,7 +148,7 @@ header {
 	}//this closes the query
 			img{
 				width: 50vh;
-				margin: 0 20%;
+				margin: 0 24%;
 			}//this closes the img tag
 		}//this closes the .image
 	.header-text{
@@ -159,13 +159,14 @@ header {
 			font-size: 2rem;
 		}//this closes the query
 			h1{
-			font-size: 2rem;
+			font-size: 8rem;
 			margin-bottom: 2%;
 			@media (max-width: 500px){
-				font-size: 3rem;
+				font-size: 4rem;
 			}//this closes the query
 		}//this closes the h1
 			p{
+				font-size: 2.5rem;
 			@media (max-width: 500px){
 				font-size: 1.5rem;
 			}//this closes the query			
@@ -175,11 +176,13 @@ header {
 			margin-left: 3%;
 			padding: 2%;
 			.button-footer();
+			font-size: 2rem;
 
 			@media (max-width: 500px){
-				margin-left: 9%;
+				margin-left: 8%;
 				background-color: black;
 				color: white;
+				font-size: 2rem;
 			}//this closes the query
 	}//this closes the button
 }//this closes the .header-content
@@ -195,7 +198,7 @@ header {
 	h2{
 		color: white;
 		text-align: center;
-		font-size: 1.5rem;
+		font-size: 5.5rem;
 		margin-bottom: 3%;
 	}//this closes the h2
 	a{
@@ -221,8 +224,10 @@ header {
 	h2{
 		margin-top: 3%;
 		.text();
+		font-size: 3rem;
+
 		@media (max-width: 500px){
-			font-size: 2rem;
+			font-size: 3rem;
 			margin-left: 0;
 			text-align: center;
 		}//this closes the query
@@ -230,8 +235,10 @@ header {
 	ul{
 		margin-left:10%;
 		padding: 2%;
+		font-size: 2rem;
+
 		@media (max-width: 500px){
-			font-size: 1.6rem;
+			font-size: 1.4rem;
 			margin-right: 10%;
 		}//this closes the query 
 	}//this close the ul
@@ -256,18 +263,24 @@ header {
 		margin-top: 2%;
 		.text();
 		margin-left: 8%;
+		font-size: 3rem;
+
 		@media (max-width: 500px){
 			margin: 0;
 			text-align: center;
 			padding: 2%;
+			font-size: 2rem;
 		}
 	}
 	p{
 		margin-top: 2%;
 		margin-left: 8%;
+		font-size: 2rem;
+
 		@media (max-width: 500px){
 			margin: 0;
 			padding: 0.5%;
+			font-size: 1.2rem;
 		}
 	}
 }
@@ -277,8 +290,10 @@ footer{
 	font-size: 0.8rem;
 	padding: 2%;
 	.button-footer();
+	font-size: 1.5rem;
 
 	@media (max-width: 500px){
 		margin-left: 0%;
+		font-size: 1rem;
 	}
 }
