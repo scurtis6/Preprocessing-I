@@ -301,8 +301,9 @@ header a:hover {
 }
 @media (max-width: 500px) {
   .bottom-content h2 {
-    margin-left: 15%;
     font-size: 2rem;
+    margin-left: 0;
+    text-align: center;
   }
 }
 .bottom-content ul {
@@ -312,16 +313,26 @@ header a:hover {
 @media (max-width: 500px) {
   .bottom-content ul {
     font-size: 1.6rem;
-    margin-left: 15%;
     margin-right: 10%;
   }
 }
 .bottom-content li {
-  padding-bottom: 1rem;
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .bottom-content li {
+    padding-bottom: 4%;
+    margin-top: 1%;
+  }
 }
 .bottom-content li::before {
   content: "\002022";
   color: #686868;
+}
+@media (max-width: 500px) {
+  .contact {
+    text-align: center;
+  }
 }
 .contact h2 {
   margin-top: 2%;
@@ -329,9 +340,22 @@ header a:hover {
   text-align: left;
   margin-left: 8%;
 }
+@media (max-width: 500px) {
+  .contact h2 {
+    margin: 0;
+    text-align: center;
+    padding: 2%;
+  }
+}
 .contact p {
   margin-top: 2%;
   margin-left: 8%;
+}
+@media (max-width: 500px) {
+  .contact p {
+    margin: 0;
+    padding: 0.5%;
+  }
 }
 footer {
   margin-top: 4%;
