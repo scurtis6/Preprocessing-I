@@ -178,8 +178,8 @@ header nav a {
 }
 @media (max-width: 500px) {
   header nav a {
+    width: 100%;
     border: 1px solid black;
-    width: 475px;
   }
 }
 header a:hover {
@@ -198,7 +198,9 @@ header a:hover {
 }
 @media (max-width: 500px) {
   .header-content {
-    width: 500px;
+    width: 100%;
+    padding: 0 0 3% 0;
+    margin: 0;
   }
 }
 .header-content .image {
@@ -209,12 +211,14 @@ header a:hover {
 }
 @media (max-width: 500px) {
   .header-content .image {
-    width: 20%;
+    margin-left: 0;
+    background-color: black;
+    border: 2px solid white;
   }
 }
 .header-content .image img {
-  width: 30vh;
-  margin-left: 7%;
+  width: 50vh;
+  margin: 0 20%;
 }
 .header-content .header-text {
   margin-top: 3%;
@@ -222,7 +226,6 @@ header a:hover {
 }
 @media (max-width: 500px) {
   .header-content .header-text {
-    width: 470px;
     margin: 0 5% 0 5%;
     font-size: 2rem;
   }
@@ -239,7 +242,6 @@ header a:hover {
 @media (max-width: 500px) {
   .header-content .header-text p {
     font-size: 1.5rem;
-    margin-right: 10%;
   }
 }
 .header-content button {
@@ -262,8 +264,8 @@ header a:hover {
 }
 @media (max-width: 500px) {
   .middle-content {
-    margin-right: 20%;
     padding-bottom: 7%;
+    width: 100%;
   }
 }
 .middle-content h2 {
@@ -277,11 +279,19 @@ header a:hover {
 }
 @media (max-width: 500px) {
   .middle-content a .show-work {
-    margin-left: 15%;
+    height: 84%;
+    width: 84%;
   }
 }
 .middle-content a .show-work2 {
   margin: 8% 0 0 8%;
+}
+@media (max-width: 500px) {
+  .middle-content a .show-work2 {
+    height: 84%;
+    width: 84%;
+    margin-top: 4%;
+  }
 }
 .bottom-content h2 {
   margin-top: 3%;
