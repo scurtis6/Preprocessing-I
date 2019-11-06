@@ -34,6 +34,7 @@ body {
 }
 ol, ul {
 	list-style: none;
+	font-family: @pfont;
 }
 blockquote, q {
 	quotes: none;
@@ -54,10 +55,33 @@ table {
   }
   h1, h2, h3, h4, h5 {
 	font-size: 2rem;
+	font-family: @hfont;
   }
   html, body {
 	max-width: 100%;
     height: 100%;
+}
+p{
+	font-family: @pfont;
+}
+
+@import url('https://fonts.googleapis.com/css?family=McLaren|Yeon+Sung&display=swap');
+
+@colorblue: darkblue;
+@pfont: 'McLaren', cursive;
+@hfont: 'Yeon Sung', cursive;
+.text(){
+	margin-left: 8%;
+		color: black;
+		text-align: left
+}
+.show(){
+	width: 100%;
+	display: flex;
+}
+.button-footer(){
+	background-color: @colorblue;
+			color: white;
 }
 html{
 	max-width: 900px;
@@ -71,19 +95,6 @@ html{
 		align-content: center;
 	}//this close the query
 	}//this closes the html, body
-.text(){
-	margin-left: 8%;
-		color: black;
-		text-align: left
-}
-.show(){
-	width: 100%;
-	display: flex;
-}
-.button-footer(){
-	background-color: darkblue;
-			color: white;
-}
 header {
 	nav{
 	margin: 0 auto;
