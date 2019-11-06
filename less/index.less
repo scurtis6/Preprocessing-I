@@ -49,21 +49,30 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+*, *:before, *:after {
+	box-sizing: inherit;
+  }
+  h1, h2, h3, h4, h5 {
+	font-size: 2rem;
+  }
+  html, body {
+	max-width: 100%;
+    height: 100%;
 }
-
-html, body {
-	height: 100%;
-	background: lightgray;
+html{
+	max-width: 900px;
+	box-sizing: border-box;
+	background: lightcoral;
+	font-size: 62.5%;
 	
 	@media (max-width: 500px){
+		max-width: 500px;
 		background: white;
 		align-content: center;
 	}//this close the query
 	}//this closes the html, body
 .text(){
-	margin-left: 22%;
+	margin-left: 8%;
 		color: black;
 		text-align: left
 }
@@ -71,16 +80,19 @@ html, body {
 	width: 100%;
 	display: flex;
 }
+.button-footer(){
+	background-color: darkblue;
+			color: white;
+}
 header {
 	nav{
-	margin: auto;
+	margin: 0 auto;
 	.show();
-	justify-content: center;
+	justify-content: flex-end;
 
 		@media (max-width: 500px){
 			font-size: 4rem;
-			margin-left: 150px;
-			padding: 5px;
+			text-align: center;
 			display: flex;
 			flex-direction: column;
 		}//this closes the query
@@ -92,8 +104,6 @@ header {
 	
 		@media (max-width: 500px){
 			border: 1px solid black;
-			margin-left: -150px;
-			padding-left: 150px;
 			width: 475px;
 		}//this closes the query
 	}//this closes the nav a}
@@ -106,74 +116,86 @@ header {
 }//this closes the a:hover
 }
 .header-content{
+	background-color: antiquewhite;
 	margin: 3% auto;
-	width: 900px;
-}//this closes the .header-content
+	padding: 3% 0;
+	@media (max-width: 500px){
+		width: 500px;
+	}
 	.image{
-	overflow: hidden;
-	.show();
-	margin-left: -4%;
-	@media (max-width: 500px){
-		margin-left: 17%;	
-	}//this closes the query
-}//this closes the .image
-	.header-text{
-	margin-top: 3%;
-	padding: 3%;
-	@media (max-width: 500px){
-		width: 470px;
-		margin: 0 5% 0 5%;
-		font-size: 2rem;
-	}//this closes the query
-}//this closes the .header text
-	h1{
-	font-size: 2rem;
-	margin-bottom: 2%;
-	@media (max-width: 500px){
-		font-size: 3rem;
-	}//this closes the query
-}//this closes the h1
-	p{
-	@media (max-width: 500px){
-		font-size: 1.5rem;
-		margin-right: 10%
-	}//this closes the query			
-}//this closes the p
-
-	button{
-		margin-left: 3%;
-		padding: 2%;
+		overflow: hidden;
+		.show();
+		margin-left: -4%;
 		@media (max-width: 500px){
-			margin-left: 9%;
-			background-color: black;
-			color: white;
+			width: 20%;
+	}//this closes the query
+			img{
+				width: 30vh;
+				margin-left: 7%;
+			}//this closes the img tag
+		}//this closes the .image
+	.header-text{
+		margin-top: 3%;
+		padding: 3%;
+		@media (max-width: 500px){
+			width: 470px;
+			margin: 0 5% 0 5%;
+			font-size: 2rem;
 		}//this closes the query
-}//this closes the button
+			h1{
+			font-size: 2rem;
+			margin-bottom: 2%;
+			@media (max-width: 500px){
+				font-size: 3rem;
+			}//this closes the query
+		}//this closes the h1
+			p{
+			@media (max-width: 500px){
+				font-size: 1.5rem;
+				margin-right: 10%
+			}//this closes the query			
+		}//this closes the p
+	}//this closes the .header text
+		button{
+			margin-left: 3%;
+			padding: 2%;
+			.button-footer();
 
+			@media (max-width: 500px){
+				margin-left: 9%;
+				background-color: black;
+				color: white;
+			}//this closes the query
+	}//this closes the button
+}//this closes the .header-content
 .middle-content{
-	margin-left: 22%;
-	max-width: 900px;
-	border: 1px solid black;
-	padding: 2% 0% 2% -0%;
+	border: 2px solid white;
+	padding: 5% 0%;
 	background: black;
 	@media (max-width: 500px){
 		margin-right: 20%;
 		padding-bottom: 7%;
 	}//this closes the query
-}//this closes the .middle-content
+
 	h2{
 		color: white;
 		text-align: center;
 		font-size: 1.5rem;
 		margin-bottom: 3%;
 	}//this closes the h2
-	img{
-		margin-left: 7%;
-		justify-content: center;
+	a{
+	.show-work{
+		margin: 4% 0 0 8%;
 		@media (max-width: 500px){
 			margin-left: 15%;
 		}//this closes the query
 	}//this close the img
+	.show-work2{
+		margin: 8% 0 0 8%;
+	}//this closes .show-work2
+}//this closes the a tag
+}//this closes the .middle-content
+
 .bottom-content{
 	h2{
 		margin-top: 3%;
@@ -184,7 +206,8 @@ header {
 		}//this closes the query
 	}//this close the h2
 	ul{
-		margin-left: 25%;
+		margin-left:10%;
+		padding: 2%;
 		@media (max-width: 500px){
 			font-size: 1.6rem;
 			margin-left: 15%;
@@ -204,17 +227,20 @@ header {
 	h2{
 		margin-top: 2%;
 		.text();
+		margin-left: 8%;
 	}
 	p{
 		margin-top: 2%;
-		margin-left: 22%;
+		margin-left: 8%;
 	}
 }
 footer{
 	margin-top: 4%;
-	margin-left: 22%;
 	text-align: center;
 	font-size: 0.8rem;
+	padding: 2%;
+	.button-footer();
+
 	@media (max-width: 500px){
 		margin-left: 0%;
 	}

@@ -127,32 +127,46 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2rem;
 }
 html,
 body {
+  max-width: 100%;
   height: 100%;
-  background: lightgray;
+}
+html {
+  max-width: 900px;
+  box-sizing: border-box;
+  background: lightcoral;
+  font-size: 62.5%;
 }
 @media (max-width: 500px) {
-  html,
-  body {
+  html {
+    max-width: 500px;
     background: white;
     align-content: center;
   }
 }
 header nav {
-  margin: auto;
+  margin: 0 auto;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 @media (max-width: 500px) {
   header nav {
     font-size: 4rem;
-    margin-left: 150px;
-    padding: 5px;
+    text-align: center;
     display: flex;
     flex-direction: column;
   }
@@ -165,8 +179,6 @@ header nav a {
 @media (max-width: 500px) {
   header nav a {
     border: 1px solid black;
-    margin-left: -150px;
-    padding-left: 150px;
     width: 475px;
   }
 }
@@ -180,62 +192,72 @@ header a:hover {
   }
 }
 .header-content {
+  background-color: antiquewhite;
   margin: 3% auto;
-  width: 900px;
+  padding: 3% 0;
 }
-.image {
+@media (max-width: 500px) {
+  .header-content {
+    width: 500px;
+  }
+}
+.header-content .image {
   overflow: hidden;
   width: 100%;
   display: flex;
   margin-left: -4%;
 }
 @media (max-width: 500px) {
-  .image {
-    margin-left: 17%;
+  .header-content .image {
+    width: 20%;
   }
 }
-.header-text {
+.header-content .image img {
+  width: 30vh;
+  margin-left: 7%;
+}
+.header-content .header-text {
   margin-top: 3%;
   padding: 3%;
 }
 @media (max-width: 500px) {
-  .header-text {
+  .header-content .header-text {
     width: 470px;
     margin: 0 5% 0 5%;
     font-size: 2rem;
   }
 }
-h1 {
+.header-content .header-text h1 {
   font-size: 2rem;
   margin-bottom: 2%;
 }
 @media (max-width: 500px) {
-  h1 {
+  .header-content .header-text h1 {
     font-size: 3rem;
   }
 }
 @media (max-width: 500px) {
-  p {
+  .header-content .header-text p {
     font-size: 1.5rem;
     margin-right: 10%;
   }
 }
-button {
+.header-content button {
   margin-left: 3%;
   padding: 2%;
+  background-color: darkblue;
+  color: white;
 }
 @media (max-width: 500px) {
-  button {
+  .header-content button {
     margin-left: 9%;
     background-color: black;
     color: white;
   }
 }
 .middle-content {
-  margin-left: 22%;
-  max-width: 900px;
-  border: 1px solid black;
-  padding: 2% 0% 2% 0%;
+  border: 2px solid white;
+  padding: 5% 0%;
   background: black;
 }
 @media (max-width: 500px) {
@@ -244,24 +266,26 @@ button {
     padding-bottom: 7%;
   }
 }
-h2 {
+.middle-content h2 {
   color: white;
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 3%;
 }
-img {
-  margin-left: 7%;
-  justify-content: center;
+.middle-content a .show-work {
+  margin: 4% 0 0 8%;
 }
 @media (max-width: 500px) {
-  img {
+  .middle-content a .show-work {
     margin-left: 15%;
   }
 }
+.middle-content a .show-work2 {
+  margin: 8% 0 0 8%;
+}
 .bottom-content h2 {
   margin-top: 3%;
-  margin-left: 22%;
+  margin-left: 8%;
   color: black;
   text-align: left;
 }
@@ -272,7 +296,8 @@ img {
   }
 }
 .bottom-content ul {
-  margin-left: 25%;
+  margin-left: 10%;
+  padding: 2%;
 }
 @media (max-width: 500px) {
   .bottom-content ul {
@@ -290,19 +315,21 @@ img {
 }
 .contact h2 {
   margin-top: 2%;
-  margin-left: 22%;
   color: black;
   text-align: left;
+  margin-left: 8%;
 }
 .contact p {
   margin-top: 2%;
-  margin-left: 22%;
+  margin-left: 8%;
 }
 footer {
   margin-top: 4%;
-  margin-left: 22%;
   text-align: center;
   font-size: 0.8rem;
+  padding: 2%;
+  background-color: darkblue;
+  color: white;
 }
 @media (max-width: 500px) {
   footer {
