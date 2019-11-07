@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+//variables
+@black: black;
+@white:white;
+
+//mixins
+.bordered(){
+    border-bottom: 1px solid @black;
+}
+.full-border(){
+    border: 1px solid @black;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body{
+	margin: 0 auto;
+	max-width: 900px;
+}
+/* this is code for the navigation*/
+header{
+	width: 900px;
+	position: fixed;
+	top: 15px;
+	display: flex;
+
+        .navigation{
+        width: 650px;
+        padding-top: 25px;
+
+            a{
+                color: gray;
+                text-decoration: none;
+                padding-right: 45px;
+        }//this closes the a tag
+    }//this closes the nav
+    .logo{
+        height: 6vh;
+        padding-left: 20px;
+        padding-top: 15px;
+    }//this closes the .logo
+}//this closes the header
+
+/* this is code for the main content*/
+.main-content{
+	display: flex;
+	margin-top: 150px;
+	font-size: 70px;
+	.bordered();
+	padding-bottom: 50px;
+	width: 875px;
+        .title{
+            width: 49%;
+            margin-top: 45px;
+            text-align: center;
+            vertical-align: middle;
+            margin-left: 50px;
+            h1{
+                padding-top: 60px;
+            }//this closes the h1
+            .button{
+                margin-top: -45px;
+
+                button{
+                    background-color: @white;
+                    .full-border();
+                    padding: 5px 40px;	
+                }//this closes the button
+            }//this closes the .button
+        }//this closes the .title
+    }//this closes the .main-content
+
+/* this is code fot the top content*/
+.top-content{
+	margin-top: 30px;
+    display: flex;
+
+    .text-content{
+        width: 49%;
+    }//this closes the .text-content
+    .middle-img{
+        margin-top: 30px;
+        }//this closes the .middle-img
+    }//this closes the .top-content}
+
+
+/* this is code for the main content*/
+.bottom-content{
+	display: flex;
+	width: 876px;
+	margin-top: 30px;
+	padding-bottom: 40px;
+    .bordered();
+    
+    .bottom-text{
+        width: 33%;
+    }//this closes the .bottom-text
+}//this closes the .bottom-content
+
+
+/* this is code for the contact information*/
+.contact{
+	margin-top: 30px;
+}
+/* this is code for the footer*/
+footer{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	font-family: 'Dosis', sans-serif;
+}
+/* this is code for the services html*/
+.services-header-img{
+	margin-top: 90px;
+}
+.service-top{
+	margin-top: 20px;
+	padding-bottom: 40px;
+	.bordered();
+}
+.service-top h1{
+	font-size: 20px;
+}
+.main-top{
+	display: flex;
+    margin-top: 30px;
+    @media (max-width: 600px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }//this closes the media query		
+    .text-one{
+        background-color: rgb(240, 240, 240);
+        .full-border();
+        padding: 20px;
+        margin-right: 20px;
+        @media (max-width: 600px){
+                margin: 0px;
+                margin-bottom: 30px;
+        }//this closes the media query
+        button{
+            margin-top: 20px;
+            padding: 10px 40px;
+            background-color: @white;
+            .full-border();
+            border-radius: 4px;
+        }//this closes the button
+    }//this closes the .text-one
+    .text-two{
+        background-color: rgb(240, 240, 240);
+        .full-border();
+        padding: 20px;
+        margin-left: 20px;
+        @media (max-width: 600px){
+                margin: 0px;
+                padding: 2px;
+        }//this closes the media query
+        button{
+            margin-top: 20px;
+            padding: 10px 40px;
+            background-color: @white;
+            .full-border();
+            border-radius: 4px;
+        }//this closes the button
+    }//this closes the .text-two
+}//this closes the .main-top
+
+.service-bottom{
+	display: flex;
+	margin-top: 30px;
+	border-top: 1px solid @black;
+    padding-top: 40px;
+    .facts{
+        margin-right: 20px;
+        width: 450px;
+        ul{
+            margin-top: 30px;
+            list-style-type: square;
+            margin-left: 18px;
+            li{
+                padding-bottom: 3%;
+            }//this closes the li tag
+        }//this closes the ul tag
+    }//this closes the .facts
+    .services-info-img{
+        width: 430px;
+        margin-left: 20px;
+    }//this closes the .services-info-img
+}//this closes the .service-bottom
+.service-footer{
+    text-align: center;
+    margin-top: 100px;
+}
