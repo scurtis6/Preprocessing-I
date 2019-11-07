@@ -156,7 +156,7 @@ header {
   top: 15px;
   display: flex;
 }
-header nav {
+header .navigation {
   width: 650px;
   padding-top: 25px;
 }
@@ -175,7 +175,7 @@ header .logo {
   display: flex;
   margin-top: 150px;
   font-size: 70px;
-  border-bottom: solid 1px black;
+  border-bottom: 1px solid black;
   padding-bottom: 50px;
   width: 875px;
 }
@@ -192,7 +192,7 @@ header .logo {
 .main-content .title .button {
   margin-top: -45px;
 }
-.main-content .title button {
+.main-content .title .button button {
   background-color: white;
   border: 1px solid black;
   padding: 5px 40px;
@@ -205,8 +205,7 @@ header .logo {
 .top-content .text-content {
   width: 49%;
 }
-/* this is code for the image*/
-.middle-img {
+.top-content .middle-img {
   margin-top: 30px;
 }
 /* this is code for the main content*/
@@ -247,11 +246,24 @@ footer {
   display: flex;
   margin-top: 30px;
 }
+@media (max-width: 600px) {
+  .main-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .main-top .text-one {
   background-color: #f0f0f0;
   border: 1px solid black;
   padding: 20px;
   margin-right: 20px;
+}
+@media (max-width: 600px) {
+  .main-top .text-one {
+    margin: 0px;
+    margin-bottom: 30px;
+  }
 }
 .main-top .text-one button {
   margin-top: 20px;
@@ -265,6 +277,12 @@ footer {
   border: 1px solid black;
   padding: 20px;
   margin-left: 20px;
+}
+@media (max-width: 600px) {
+  .main-top .text-two {
+    margin: 0px;
+    padding: 2px;
+  }
 }
 .main-top .text-two button {
   margin-top: 20px;
@@ -291,29 +309,11 @@ footer {
 .service-bottom .facts ul li {
   padding-bottom: 3%;
 }
-.service-bottom img {
+.service-bottom .services-info-img {
   width: 430px;
   margin-left: 20px;
 }
 .service-footer {
   text-align: center;
   margin-top: 100px;
-}
-@media (max-width: 600px) {
-  .main-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 600px) {
-  .main-top .text-one {
-    margin: 0px;
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 600px) {
-  .main-top .text-two {
-    margin: 01px;
-  }
 }
